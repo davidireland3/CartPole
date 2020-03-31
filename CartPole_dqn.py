@@ -107,11 +107,11 @@ def cartpole(no_eps):
 
 final_dqn,score = cartpole(300)
 
-with open("/Users/ft19377/Documents/cartpole_dqn","wb") as cartpole_file:
+with open("/Users/Documents/cartpole_dqn","wb") as cartpole_file:
     pickle.dump(final_dqn,cartpole_file)
 
 plt.plot(score)
-file_path = "/Users/ft19377/Documents/cartpole_score.pdf"
+file_path = "/Users/Documents/cartpole_score.pdf"
 plt.savefig(file_path)
 plt.show()
 
